@@ -6,7 +6,8 @@ help:
 	@echo "    make install  -- create the database, install requirements, etc"
 
 test:
-	python manage.py test
+	@python manage.py test
+	@flake8
 
 run:
 	DEBUG=1 \
