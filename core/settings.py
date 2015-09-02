@@ -63,11 +63,11 @@ _db_config['CONN_MAX_AGE'] = None
 DATABASES = {'default': _db_config}
 
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 TIME_ZONE = 'UTC'
-USE_I18N = True
+USE_I18N = False
 USE_L10N = True
-USE_TZ = True
+USE_TZ = False
 
 
 STATIC_URL = '/static/'
