@@ -1,0 +1,15 @@
+language: python
+sudo: false
+python:
+  - "3.4"
+cache:
+  - directories:
+    - ~/.cache/pip
+install:
+  - psql -c 'CREATE DATABASE qanda' -U postgres
+  - pip install pip wheel setuptools -U
+  - pip install -r requirements.txt
+script:
+  - make test
+notifications:
+  email: false
