@@ -5,10 +5,6 @@ python:
 cache:
   - directories:
     - ~/.cache/pip
-env:
-  global:
-    - PIP_WHEEL_DIR=$HOME/.cache/pip/wheels
-    - PIP_FIND_LINKS=file://$HOME/.cache/pip/wheels
 install:
   - psql -c 'CREATE DATABASE qanda' -U postgres
   - pip install pip wheel setuptools -U
