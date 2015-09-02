@@ -22,4 +22,3 @@ else
 	psql -c "CREATE DATABASE qanda;"
 endif
 	python manage.py migrate
-
