@@ -13,6 +13,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'core',
+    'users',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -21,6 +22,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 )
+
+AUTH_USER_MODEL = 'users.User'
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
