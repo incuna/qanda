@@ -21,6 +21,7 @@ INSTALLED_APPS = (
 
     # Third party apps
     'crispy_forms',
+    'flat',
     'incuna_auth',
 
     # Django
