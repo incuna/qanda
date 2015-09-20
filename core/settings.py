@@ -1,6 +1,7 @@
 import os
 
 import dj_database_url
+from django.core.urlresolvers import reverse_lazy
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -12,9 +13,17 @@ ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = (
+    # Core app
     'core',
+
+    # Apps in this project
     'users',
 
+    # Third party apps
+    'crispy_forms',
+    'incuna_auth',
+
+    # Django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -24,6 +33,8 @@ INSTALLED_APPS = (
 )
 
 AUTH_USER_MODEL = 'users.User'
+LOGIN_URL = reverse_lazy('login')
+LOGOUT_URL = reverse_lazy('logout')
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
