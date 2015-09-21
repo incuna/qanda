@@ -1,5 +1,6 @@
 django==1.8.4
 django-crispy-forms==1.5.2
+django-flat-theme==1.1.1
 django-user-management==13.1.1
 dj-database-url==0.3.0
 flake8==2.4.1
