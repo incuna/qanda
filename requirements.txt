@@ -1,6 +1,10 @@
 django==1.8.4
+django-crispy-forms==1.5.2
+django-user-management==13.1.1
 dj-database-url==0.3.0
 flake8==2.4.1
 flake8-import-order==0.5.1
+incuna-auth==3.0.0
+incuna-test-utils==6.3.1
 pep8==1.6.2
 psycopg2==2.6.1
