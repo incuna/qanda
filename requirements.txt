@@ -1,3 +1,4 @@
+colour-runner==0.0.4
 django==1.8.4
 django-crispy-forms==1.5.2
 django-flat-theme==1.1.1

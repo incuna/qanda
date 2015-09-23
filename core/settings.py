@@ -86,3 +86,6 @@ USE_TZ = False
 
 
 STATIC_URL = '/static/'
+
+
+TEST_RUNNER = 'core.runner.TestRunner'
