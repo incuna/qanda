@@ -17,6 +17,7 @@ INSTALLED_APPS = (
     'core',
 
     # Apps in this project
+    'questions',
     'users',
 
     # Third party apps
