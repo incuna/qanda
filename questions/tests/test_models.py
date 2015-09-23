@@ -14,6 +14,7 @@ class TestAnswer(TestCase):
 
             # incoming relationship
             'questions',
+            'user',
             'votes',
         }
         fields = field_names(Answer)
@@ -22,7 +23,7 @@ class TestAnswer(TestCase):
 
 class TestAnswerVote(TestCase):
     def test_fields(self):
-        expected = {'id', 'vote', 'answer'}
+        expected = {'id', 'user', 'vote', 'answer'}
         fields = field_names(AnswerVote)
         self.assertEqual(fields, expected)
 
@@ -38,6 +39,7 @@ class TestQuestion(TestCase):
 
             # incoming relationships
             'answers',
+            'user',
             'votes',
         }
         fields = field_names(Question)
@@ -46,6 +48,6 @@ class TestQuestion(TestCase):
 
 class TestQuestionVote(TestCase):
     def test_fields(self):
-        expected = {'id', 'vote', 'question'}
+        expected = {'id', 'user', 'vote', 'question'}
         fields = field_names(QuestionVote)
         self.assertEqual(fields, expected)

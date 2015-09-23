@@ -14,8 +14,12 @@ class TestUser(TestCase):
             'is_superuser',
             'password',
 
-            'logentry',
+            'answer_votes',
+            'answers',
             'groups',
+            'logentry',
+            'question_votes',
+            'questions',
             'user_permissions',
         }
         fields = field_names(User)
